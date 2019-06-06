@@ -12,4 +12,4 @@ FOUNDATION_EXPORT double TrustCoreVersionNumber;
 //! Project version string for TrustCore.
 FOUNDATION_EXPORT const unsigned char TrustCoreVersionString[];
 
-#import <TrustCore/Crypto.h>
+#import <Crypto.h>
