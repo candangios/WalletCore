@@ -1,0 +1,8 @@
+
+ -> tag -> tag
+    - ERROR | spec: The specification defined in `tag` could not be loaded.
+
+[!] No podspec exists at path `tag`.
+
+[!] tag did not pass validation, due to 1 error.
+You can use the `--no-clean` option to inspect any issue.

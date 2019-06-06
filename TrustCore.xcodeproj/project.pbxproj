@@ -761,6 +761,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.trustwalletapp.TrustCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -783,6 +784,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.trustwalletapp.TrustCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
