@@ -25,12 +25,12 @@ public struct Coin: Equatable {
             blockchain = .bitcoin
         case Coin.ethereumTestNet.coinType:
             blockchain = .ropsten
-        case Coin.ethereumClassic.coinType:
-            blockchain = .ethereumClassic
-        case Coin.tomo.coinType, Coin.tomoTesttNet.coinType:
+        case Coin.tomo.coinType, Coin.tomoTestnet.coinType:
             blockchain = .tomo
-        default:
+        case Coin.ethereum.coinType:
             blockchain = .ethereum
+        default:
+             blockchain = .tomo
         }
     }
 }
@@ -42,10 +42,6 @@ extension Coin {
     public static let ethereum = Coin(coinType: 60, blockchain: .ethereum)
     public static let ethereumTestNet = Coin(coinType: 1, blockchain: .ropsten)
 
-    public static let ethereumClassic = Coin(coinType: 61, blockchain: .ethereumClassic)
-    public static let poa = Coin(coinType: 178, blockchain: .ethereum)
-    public static let callisto = Coin(coinType: 820, blockchain: .ethereum)
-    public static let gochain = Coin(coinType: 6060, blockchain: .ethereum)
-    public static let tomo = Coin(coinType: 889, blockchain: .ethereum)
-    public static let tomoTesttNet = Coin(coinType: 889, blockchain: .ethereum)
+    public static let tomo = Coin(coinType: 889, blockchain: .tomo)
+    public static let tomoTestnet = Coin(coinType: 889, blockchain: .tomoTestnet)
 }
