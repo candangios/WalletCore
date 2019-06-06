@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'WalletCore'
-  s.version      = '0.3.1'
+  s.version      = '1.3.2'
   s.summary      = 'Core Ethereum data structures and algorithms.'
   s.homepage     = 'https://github.com/candangios/WalletCore'
   s.license      = 'MIT'
