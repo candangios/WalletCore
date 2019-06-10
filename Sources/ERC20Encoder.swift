@@ -99,3 +99,4 @@ public final class ERC20Encoder {
         return encoder.data
     }
 }
+

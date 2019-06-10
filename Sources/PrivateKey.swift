@@ -62,12 +62,17 @@ public final class PrivateKey: Hashable, CustomStringConvertible {
     }
 
     /// Public key.
-    public func publicKey(for type: BlockchainType) -> PublicKey {
-        switch type {
+    public func publicKey(for coin: Coin) -> PublicKey {
+        switch coin {
         case .bitcoin:
-            return BitcoinPublicKey(data: Crypto.getBitcoinPublicKey(from: data))!
-        case .ethereum:
-            return EthereumPublicKey(data: Crypto.getEthereumPublicKey(from: data))!
+            return BitcoinPublicKey(data: Crypto.getPublicKey(from: data))!
+        case .ethereum,
+             .poa,
+             .ethereumClassic,
+             .callisto,
+             .gochain,
+             .tomo:
+            return EthereumPublicKey(data: Crypto.getPublicKey(from: data))!
         }
     }
 

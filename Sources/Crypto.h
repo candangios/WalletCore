@@ -10,11 +10,8 @@
 
 // MARK: - Elliptic Curve Cryptography
 
-/// Extracts the public key from a Ethereum private key.
-+ (nonnull NSData *)getEthereumPublicKeyFrom:(nonnull NSData *)privateKey NS_SWIFT_NAME(getEthereumPublicKey(from:));
-
-/// Extracts the public key from a Bitcoin private key.
-+ (nonnull NSData *)getBitcoinPublicKeyFrom:(nonnull NSData *)privateKey NS_SWIFT_NAME(getBitcoinPublicKey(from:));
+/// Extracts the public key from a private key.
++ (nonnull NSData *)getPublicKeyFrom:(nonnull NSData *)privateKey NS_SWIFT_NAME(getPublicKey(from:));
 
 /// Signs a hash with a private key.
 ///

@@ -9,7 +9,7 @@ import Foundation
 public final class BitcoinPublicKey: PublicKey {
     /// Validates that raw data is a valid public key.
     static public func isValid(data: Data) -> Bool {
-        if data.count != 33 {
+        if data.count != 65 {
             return false
         }
         return true
